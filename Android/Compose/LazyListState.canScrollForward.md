@@ -1,7 +1,7 @@
 # LazyListState.canScrollForward (+derivedStateOf)
 
 ### LazyList에서 더 이상 스크롤 할 수 없을 때를 구분하는 방법
-- LazyList에서 더 이상 스크롤 할 수 없을 때 (목록 끝까지 스크롤했을 때)를 알 수 있는 방법
+- LazyList에서 더 이상 스크롤 할 수 없을 때 (목록 끝까지 스크롤 했을 때)를 알 수 있는 방법
 
 ```
 val lazyListState = rememberLazyListState()
@@ -12,7 +12,6 @@ val isScrollEnd by remember(uiState.games.size) {
     }
 }
 ```
-
 
 - **DerivedStateOf**   
 derivedStateOf는 상태가 변화할 때만 다시 계산되며, 이는 불필요한 계산을 줄이고 성능을 향상시킨다.
