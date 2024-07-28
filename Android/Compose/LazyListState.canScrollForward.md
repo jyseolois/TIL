@@ -26,7 +26,9 @@ remember 블록이 다시 실행되어 derivedStateOf가 재정의된다.
 derivedStateOf 블록이 다시 계산된다.
 
 
-`derivedStateOf`는 특정 상태가 다른 상태에 따라 동적으로 변해야 할 때 유용하다. `derivedStateOf`를 사용하면 성능을 최적화할 수 있으며, 불필요한 재구성을 피할 수 있다.
+## derivedStateOf
+- `derivedStateOf`는 특정 상태가 다른 상태에 따라 동적으로 변해야 할 때 유용하다.     
+- `derivedStateOf`를 사용하면 성능을 최적화할 수 있으며, 불필요한 재구성을 피할 수 있다.
 
 ```kotlin
 @Composable
