@@ -1,4 +1,4 @@
-# Avoid initializing state in the init {} block
+# Avoid initializing state in the init block
 
 ViewModel의 init{} 블록에서 데이터를 로드하는 것을 지양해야 하는 이유.
 
