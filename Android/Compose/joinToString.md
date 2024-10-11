@@ -13,7 +13,7 @@
 ```
 fun main() {
     val list = listOf("Apple", "Banana", "Cherry", "Date", "Elderberry")
-ㄴ
+
     // 기본 설정으로 joinToString 사용
     val result1 = list.joinToString()
     println(result1) // 출력: Apple, Banana, Cherry, Date, Elderberry
