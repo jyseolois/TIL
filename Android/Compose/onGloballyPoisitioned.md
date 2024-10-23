@@ -8,10 +8,10 @@ onGloballyPositioned는 Jetpack Compose에서 컴포저블의 전역적인 배�
 **1. 크기 확인: 컴포저블이 배치된 후 실제 크기를 확인할 수 있다. 예를 들어, 컴포저블의 높이나 너비를 얻을 수 있다.**
 ```
 Modifier.onGloballyPositioned { layoutCoordinates ->
-    layoutHeight = layoutCoordinates.size.height
+    layoutHeight = coordinates.size.height.toFloat().dp
 }
 ```
-- layoutCoordinates.size.height를 통해 레이아웃의 높이를 추출하고, 이를 layoutHeight 변수에 저장
+- lcoordinates.size.height.toFloat().dp를 통해 레이아웃의 높이를 추출하고, 이를 layoutHeight 변수에 저장
 - LayoutCoordinates.size는 레이아웃의 크기(너비와 높이)를 제공하며, 이 경우 높이(height)만 추출하여 이후 로직에 활용.
 - 이 코드는 컴포넌트가 화면에 배치될 때 해당 컴포넌트의 높이 값을 계산하고 이를 사용하고 싶은 상황에 적합.           
    
