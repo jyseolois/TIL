@@ -30,6 +30,10 @@ Modifier.padding(
 )
 ```
 - coordinates라는 LayoutCoordinates 객체에서 좌표 정보를 추출
-- coordinates.localToWindow(Offset.Zero)는 해당 컴포넌트의 화면 상에서의 위치를 Offset 객체로 변환. 이 값은 전체 화면의 좌표계에서 현재 컴포넌트의 위치를 나타냄.
+- coordinates.localToWindow(Offset.Zero)는 해당 컴포넌트의 화면 상에서의 위치를 Offset 객체로 변환. 이 값은 **전체 화면의 좌표계에서 현재 컴포넌트의 최상단 좌표 위치**를 나타냄. 
 - 추출한 위치 정보를 position(pos) 함수로 전달. 이 함수는 커스텀 함수로 보이며, 위치 데이터를 외부에서 사용할 수 있도록 설정하는 역할을 함.
   
+```
+coordinates.positionInWindow().y
+```
+컴포넌트의 좌상단이 화면 좌표계(Window)에서 어디에 있는지를 직접 반환. Offset.Zero를 전달할 필요가 없고, 컴포넌트 자체의 좌상단 위치가 화면 좌표계에서 반환. Offset 객체로 반환되며, 컴포저블의 좌상단 (x, y) 좌표를 화면 기준으로 나타냄.
